@@ -1,6 +1,9 @@
 *{
   padding:0;
   margin:0;
+  box-sizing: border-box;
+  overflow-x:hidden;
+  background-color:#22211e;
   
 }
 
@@ -9,7 +12,7 @@
 nav {
   background-color: rgba(255, 255, 255, 0);
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 3;
 }
@@ -26,23 +29,26 @@ nav ul {
 nav li a {
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #f4f4f400;
   text-decoration: none;
-  color: rgb(226, 116, 13);
+  color: #ff8000;
+  background-color: rgba(255, 255, 255, 0);
+ 
   
 }
 nav li{
   margin-right: 75px;
   padding-right:20px;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 nav li a:hover,
 nav .menu-btn:hover {
   background-color: #f4f4f4;
   text-decoration: none;
-  color: #333;
+  color: #fff;
   font-size: 15px;
   border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0);
  
 }
 
@@ -55,6 +61,7 @@ nav .logo {
   color: rgb(226, 116, 13);
   cursor: pointer;
   margin-left:10px;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 /* menu */
@@ -129,7 +136,7 @@ nav .menu-btn:checked ~ .menu-icon .nav-icon:after {
 
 /* 48em = 768px @ 16pt font */
 
-@media (min-width: 48em) {
+@media (min-width: 60em) {
   nav li {
     float: left;
   }
@@ -144,6 +151,73 @@ nav .menu-btn:checked ~ .menu-icon .nav-icon:after {
   nav .menu-icon {
     display: none;
   }
+
+}
+
+/*Homepage*/
+
+
+.img-slider {
+  position: relative;
+  width: 100vw;
+  height: 400px;
+}
+ .slider-container {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  animation: slider 15s infinite;
+}
+.img-slider .slider-container .slide {
+  position: relative;
+  width: 33.33333333%;
+  height: 100%;
+  float: left;
+  overflow: hidden
+}
+.img-slider .slider-container {
+position:absolute;
+display: block;
+width: 150%;
+height: 50vh;
+overflow:hidden;
+border-radius: 15px;
+background-color:#22211e;
+
+}
+
+.slide img {
+  width:100%;
+  height: 60vh;
+  padding:5px;
+  border-radius: 15px;
+
+}
+
+@keyframes slider {
+  0%, 25%, 100%{left: 0}
+  
+  30%, 55%{left: -40%}
+  
+  60%, 85%{left: -52%}
+ 
+}
+
+@media (min-width: 60em){
+ 
+
+.img-slider .slider-container {
+position:absolute;
+display: block;
+width: 150%;
+height: 50vh;
+overflow:hidden;
+border-radius: 15px;
+background-color:#22211e;
+
+}
 
 }
 
