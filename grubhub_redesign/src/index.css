@@ -13,9 +13,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.navbar{
-  background-image: url("https://images.pexels.com/photos/958546/pexels-photo-958546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
-}
-.nav-link{
-  color: white !important;
-}

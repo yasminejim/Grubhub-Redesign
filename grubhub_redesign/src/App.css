@@ -40,8 +40,10 @@ nav li a:hover,
 nav .menu-btn:hover {
   background-color: #f4f4f4;
   text-decoration: none;
-  color: tan;
-  font-size: 20px;
+  color: #333;
+  font-size: 15px;
+  border-radius: 15px;
+ 
 }
 
 nav .logo {
@@ -144,4 +146,3 @@ nav .menu-btn:checked ~ .menu-icon .nav-icon:after {
   }
 
 }
-
