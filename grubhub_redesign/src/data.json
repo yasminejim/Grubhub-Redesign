@@ -1,0 +1,70 @@
+    
+    
+    {"Restuarants":[
+
+    {
+        "RestaurantName" : "Civetta Italian Kitchen + Bar",
+        "address" :     "7828-E Rea Rd., Charlotte, NC 28277",
+        "cuisine" :  "Italian",
+        "DishItem1" : "  Pastas",
+        "DishItem2" : " chicken parmasean",
+        "DishItem3": "Salads"
+        },
+    {
+        "RestaurantName" : "Dot Dot Dot",
+        "address" :     "4237 Park Rd., Suite B Charlotte, NC 28209",
+        "cuisine" :  "Chinese",
+        "DishItem1" : " Kung-Pao Ckicken",
+        "DishItem2" : " Dumplings",
+        "DishItem3": "Hot-Pot"
+    },
+    {
+        "RestaurantName" : "Village Tavern",
+        "address" :     "4201 Congress St #190, Charlotte, NC 28209",
+        "cuisine" :  "Mediterrian",
+        "DishItem1" : "  Soupchu",
+        "DishItem2" : " Wraps",
+        "DishItem3": "Rice-Bowls"
+    },
+    {
+        "RestaurantName" : "Foxcroft Wine Co.",
+        "address" :     "7824 Fairview Road, Charlotte, NC 28226",
+        "cuisine" :  "Seafood",
+        "DishItem1" : " Fish & Shellfish",
+        "DishItem2" : " Appetizers",
+        "DishItem3": "Salads"
+    },
+    {
+        "RestaurantName" : "Bar Marcel",
+        "address" :     "3920 Sharon Rd., Suite 160 Charlotte, NC 28211",
+        "cuisine" :  "Pizza",
+        "DishItem1" : "  Perpperoni-Pizza",
+        "DishItem2" : " Cheese-Pizza",
+        "DishItem3": "Veggie-Pizza"
+    },
+    {
+        "RestaurantName" : "Epic Chophouse",
+        "address" :     "104 S. Main St., Charlotte, NC 28115",
+        "cuisine" :  "American",
+        "DishItem1" : "  Apple-Pie",
+        "DishItem2" : " Hamburger",
+        "DishItem3": "Bagel and Lox"
+    },
+    {
+        "RestaurantName" : "Luisa’s Brick Oven Pizzeria",
+        "address" :     "1730 Abbey Pl., Charlotte, NC 28209",
+        "cuisine" :  "Mexican",
+        "DishItem1" : " Buritos",
+        "DishItem2" : " Quesadillas",
+        "DishItem3": "Tacos"
+    },
+    {
+        "RestaurantName" : "Libations Kitchen & Bar",
+        "address" :     "895 W. Trade St., Charlotte, NC 28202",
+        "cuisine" :  "Barbecue",
+        "DishItem1" : "  BBQ Drumstick with Edamame",
+        "DishItem2" : " Sweetheat Cheerwine Babyback Ribs",
+        "DishItem3": "Alabama White BBQ Shrimp"
+    }
+    
+    ]}
