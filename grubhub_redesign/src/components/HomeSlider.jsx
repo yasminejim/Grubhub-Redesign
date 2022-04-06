@@ -3,7 +3,7 @@ import React from 'react'
 const HomeSlider = () => {
   return (
     <div>
-         <div className="img-slider">
+<div className="img-slider">
   <div className="slider-container">
     
     <div className="slide">
