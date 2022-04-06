@@ -62,9 +62,8 @@ const Contact = () => {
         <div className="contact">
           {/* <   Contact Information */}
           <section className="hero clear">
-            <h1>Contact</h1>
-            <h2>Contact email: care@humandesign.com</h2>
-            <h2>5538 Daniels St. Chino, CA 91710</h2>
+            <h1>CONTACT US</h1>
+            <h2>orderupsupport@grubhub.com</h2>
           </section>
           <form
             name="contactForm"
@@ -72,7 +71,7 @@ const Contact = () => {
             onSubmit="return formValidation()"
           >
             <label>
-              FIRST NAME
+              {/* FIRST NAME */}
               <input
                 name="first-name"
                 type="text"
@@ -84,7 +83,7 @@ const Contact = () => {
             </label>
 
             <label>
-              LAST NAME
+              {/* LAST NAME */}
               <input
                 name="last-name"
                 type="text"
@@ -96,7 +95,7 @@ const Contact = () => {
             </label>
 
             <label>
-              EMAIL
+              {/* EMAIL */}
               <input
                 name="email"
                 type="email"
@@ -107,19 +106,19 @@ const Contact = () => {
             </label>
 
             <label>
-              PHONE
+              {/* PHONE */}
               <input
                 name="phone"
                 type="tel"
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 className="phone"
-                placeholder="000-000-000"
+                placeholder="800-300-1000"
                 required
               />
             </label>
 
             <label>
-              COMMENTS
+              {/* COMMENTS */}
               <textarea
                 name="message"
                 className="message"
@@ -132,7 +131,7 @@ const Contact = () => {
             <input
               type="submit"
               className="form-control submit"
-              value="Submit"
+              value="SUBMIT"
             />
           </form>
         </div>
