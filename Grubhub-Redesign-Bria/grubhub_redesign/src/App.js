@@ -1,5 +1,5 @@
 import Navbar from "./Components/Navbar";
-import Footer from './Components/Footer';
+// import Footer from './components/Footer';
 import Home from "./Pages/Home";
 // import Contact from'./pages/Contact';
 // import Products from './pages/Products';
@@ -21,7 +21,7 @@ function App() {
           {/* <Route path = "/cart" element = {<Cart/>}></Route>  */}
         </Routes>
       </>
-      <Footer/>
+      {/* <Footer/> */}
     </Router>
   );
 }

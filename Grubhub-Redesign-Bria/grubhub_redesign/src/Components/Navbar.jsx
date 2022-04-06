@@ -11,7 +11,7 @@ const Navbar = () => {
         <label className="menu-icon" for="menu-btn"><span className="nav-icon"></span></label>
         <ul className="menu">
           <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/api.html"><a href="api.html">Featured Restraunts</a></NavLink></li>
+          <li><NavLink to="/products">Featured Resturants</NavLink></li>
           <li><NavLink to="/contact">Sign Up</NavLink></li>
           <li><NavLink to="/contact">Contact Us</NavLink></li>
         
