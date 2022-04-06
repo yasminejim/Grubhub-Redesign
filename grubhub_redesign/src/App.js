@@ -3,17 +3,18 @@ import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./Components/Navbar";
+import Contact from "grubhub_redesign/src/pages/Contact";
 
 function App() {
   
   return (
     <Router>
-      <div className="App">
-        <Navbar />
-        <header className="App-header">
-          <img src="./mainlogo.png" className="App-logo" alt="logo" />
-        </header>
-      </div>
+      
+        <Navbar /> <>
+        <Routes>
+        <Route exact path="/contact" element={<Contact/>}></Route>
+        </Routes>
+        </>
     </Router>
   );
 }

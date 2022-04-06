@@ -68,8 +68,7 @@ class Contact extends React.Component {
         {/* <   Contact Information */}
             <section className="hero clear">
                 <h1>Contact</h1> 
-                <h2>Contact email: care@humandesign.com</h2>
-                <h2>5538 Daniels St. Chino, CA 91710</h2>
+                <h2>Contact email: OrderUpSupport@grubhub.com</h2>
             </section>
 
         {/* Contact Page form */}
