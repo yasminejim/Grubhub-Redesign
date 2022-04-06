@@ -160,11 +160,13 @@ nav .menu-btn:checked ~ .menu-icon .nav-icon:after {
   }
   nav li a {
     padding: 20px 30px;
+    
   }
   nav .menu {
     clear: none;
     float: right;
     max-height: none;
+    
   }
   nav .menu-icon {
     display: none;
@@ -192,7 +194,7 @@ nav .menu-btn:checked ~ .menu-icon .nav-icon:after {
 .main-text img {
   background-color: transparent;
   height:250px;
-  width: 400px;
+  width: 450px;
 }
 .main-text h1{
   
@@ -261,5 +263,6 @@ background-color:#22211e;
   60%, 85%{left: -52%}
  
 }
+
 
 
