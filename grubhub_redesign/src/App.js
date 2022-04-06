@@ -3,6 +3,7 @@ import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
 function App() {
   
@@ -13,6 +14,7 @@ function App() {
         <header className="App-header">
           <img src="./mainlogo.png" className="App-logo" alt="logo" />
         </header>
+        <Footer/>
       </div>
     </Router>
   );
