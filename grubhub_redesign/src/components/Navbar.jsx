@@ -24,10 +24,11 @@ const Navbar = () => {
             <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/resturants">Featured Resturants</NavLink>
+            <NavLink to="/Featured" href="Featured.html">Featured Restraunts
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/signup">Sign Up</NavLink>
+            <NavLink to="/contact">Sign Up</NavLink>
           </li>
           <li>
             <NavLink to="/contact">Contact Us</NavLink>
