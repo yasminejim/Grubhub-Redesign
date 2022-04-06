@@ -6,17 +6,20 @@
   /* background image */
   .wrapper{
   background-image: url('./Images/backgroundimage.jpg');
-   background-position: center;
+  height:150vh;
+  position: absolute;
+ 
+   /* background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
    min-height: 100%;
-   max-width: 100%;
+   max-width: 100%; */
   }
   
   /* Contact information */
   
   .hero h1{
-    color: black;
+    color: #fff;
     text-align: center;
     font-family: "raleway";
     font-weight:1px;
@@ -25,7 +28,7 @@
   }
   
  .hero h2{
-    color: black;
+    color: #fff;
     text-align: center;
     font-family: "raleway"; 
     font-size: 14pt;
@@ -41,7 +44,8 @@
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
-    resize: vertical;
+    resize: vertical; 
+    background-color: white;
   }
   
   input[type=tel],textarea{
@@ -52,7 +56,8 @@
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
-    resize: vertical;
+    resize: vertical; 
+    background-color: white;
   }
   
   .email{
@@ -96,15 +101,17 @@
   .contact{
     background-color:#ff8000;
     opacity: 0.8;
+    top:25%;
     padding: 20px;
     width: 50%;
     margin: auto;
-    margin-top: 2%;
-    margin-bottom: 5vw;
     font-family:"raleway";
     font-weight: 3px;
     color:white;
-    border-radius: 30px;
+    border-radius: 20px;
+    position: relative;
+    
+
   }
   
   

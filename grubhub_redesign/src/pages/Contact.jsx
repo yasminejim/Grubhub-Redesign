@@ -58,18 +58,19 @@ const Contact = () => {
     }
   return (
     <div>
-        <div className ="contact-container">
+       
          <div className="wrapper">
                 
-                {/* <   Contact Information */}
+               
+        
+                {/* Contact Page form */}
+                    <div className="contact">
+                         {/* <   Contact Information */}
                     <section className="hero clear">
                         <h1>Contact</h1> 
                         <h2>Contact email: care@humandesign.com</h2>
                         <h2>5538 Daniels St. Chino, CA 91710</h2>
                     </section>
-        
-                {/* Contact Page form */}
-                    <div className="contact">
                         <form name="contactForm" action="/" onSubmit= "return formValidation()">
                             <label>
                                 FIRST NAME
@@ -101,11 +102,11 @@ const Contact = () => {
                             </form>
                     </div> 
                        
-                </div>
+                
               )
-            
               </div>
-    </div>
+              </div>
+    
   )
 }
 
