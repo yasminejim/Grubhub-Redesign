@@ -1,5 +1,5 @@
 import Navbar from "./Components/Navbar";
-import Footer from './Components/Footer';
+import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
 // import Contact from'./pages/Contact';
 // import Products from './pages/Products';
@@ -7,6 +7,7 @@ import Home from "./Pages/Home";
 import "./App.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Featured from "./Components/FeaturedRestraunts";
 
 function App() {
   return (
@@ -16,12 +17,12 @@ function App() {
         {}
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
-          {/* <Route exact path =  "/products" element = {<Products/>}></Route>
-       <Route exact path =  "/contact" element = {<Contact/>}></Route> */}
+          <Route exact path="/Feautured" element={<Featured />}></Route>
+          {/* <Route exact path =  "/contact" element = {<Contact/>}></Route> */}
           {/* <Route path = "/cart" element = {<Cart/>}></Route>  */}
         </Routes>
       </>
-      <Footer/>
+      <Footer />
     </Router>
   );
 }
