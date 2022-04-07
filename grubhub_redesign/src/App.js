@@ -1,7 +1,7 @@
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
-// import Contact from'./pages/Contact';
+import Contact from "./Pages/Contact";
 // import Products from './pages/Products';
 // import Cart from './components/Cart';
 import "./App.css";
@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/Feautured" element={<Featured />}></Route>
-          {/* <Route exact path =  "/contact" element = {<Contact/>}></Route> */}
+          <Route exact path="/Contact" element={<Contact />}></Route>
           {/* <Route path = "/cart" element = {<Cart/>}></Route>  */}
         </Routes>
       </>
