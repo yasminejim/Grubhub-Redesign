@@ -224,8 +224,20 @@ nav .menu-btn:checked ~ .menu-icon .nav-icon:after {
   height:100%;
   white-space: nowrap;
   overflow-x:scroll;
+  scrollbar-width:none;
+  scroll-behavior:smooth;
   
 }
+#slider::-webkit-scrollbar{
+display:none;
+}
+.slider-card-image{
+  width:100%;
+  height:150px;
+  background:none;
+  
+}
+
 .slider-icon {
   background:white;
   border-radius:100%;
@@ -249,11 +261,13 @@ nav .menu-btn:checked ~ .menu-icon .nav-icon:after {
 }
 
 .slider-card{
-  width:320px;
+  width:220px;
   height: 200px;
   display:inline-block;
   margin-left:5px;
   margin-right:5px;
+  background:white;
+  border-radius:10px;
 
 }
 
