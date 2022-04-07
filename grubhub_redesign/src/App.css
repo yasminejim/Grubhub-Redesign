@@ -1,4 +1,439 @@
 *{
   padding:0;
   margin:0;
+  box-sizing: border-box;
+  background-color:#22211e;
+  font-family: 'Montserrat', sans-ser
+  
 }
+.home-container{
+  overflow: hidden;
+}
+
+/*navbar*/
+nav {
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  overflow: hidden;
+
+  
+}
+
+nav ul {
+  margin: 25px;
+  padding: 0;
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0);
+  
+}
+
+nav li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: #f4f4f4;
+  background-color: rgba(255, 255, 255, 0);
+ 
+  
+}
+nav li{
+  margin-right: 75px;
+  padding-right:20px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+nav li a:hover,
+nav .menu-btn:hover {
+  background-color: #f4f4f4;
+  text-decoration: none;
+  color: #ff8000	;
+  font-size: 15px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0);
+  overflow:hidden;
+ 
+}
+
+nav .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: rgb(226, 116, 13);
+  cursor: pointer;
+  margin-left:10px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* menu */
+
+nav .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* menu icon */
+
+nav .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 38px 25px;
+  position: relative;
+  user-select: none;
+  background-color: rgba(255, 255, 255, 0);
+  
+}
+
+
+
+nav .menu-icon .nav-icon {
+  background: rgb(226, 116, 13);
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 20px;
+  
+}
+
+nav .menu-icon .nav-icon:before,
+nav .menu-icon .nav-icon:after {
+  background:#fff;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+ 
+  
+}
+
+nav .menu-icon .nav-icon:before {
+  top: 5px;
+  
+ 
+  
+}
+
+nav .menu-icon .nav-icon:after {
+  top: -5px;
+  
+  
+}
+
+/* menu btn */
+
+nav .menu-btn {
+  display: none;
+}
+
+nav .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+nav .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent !important;
+}
+
+nav .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+nav .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+/* 48em = 768px @ 16pt font */
+
+@media (min-width: 60em) {
+  nav li {
+    float: left;
+  }
+  nav li a {
+    padding: 20px 30px;
+  }
+  nav .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  nav .menu-icon {
+    display: none;
+  }
+
+}
+
+
+
+
+footer {
+  background: rgb(226, 116, 13);
+  color: white;
+  padding-bottom: .1px;
+  padding-top: .1px;
+}
+
+
+.footer-container {
+  max-width: 100%;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+.social-media {
+  margin-left: 30px;
+}
+.social-media a {
+  color: black;
+  margin-right: 25px;
+  font-size: 30px;
+  text-decoration: none;
+  transition: 0.3s linear;
+}
+.social-media a:hover {
+  color: #d3d0d0;
+}
+.right-col p{
+color: white;
+font-size: 17px;
+}
+.copyrights{
+color: white;
+margin-top: 15px;
+margin-left: 20px;
+font-size: 12px;
+}
+.connect{
+  color: white;
+  margin-top: 15px;
+  margin-left: 50px;
+  font-size: 16px;
+  }
+.border {
+  width: 100%;
+  height: 4px;
+  background: white;
+}
+.footerContact li {
+  color: white;
+  margin-top: 15px;
+  margin-left: 50px;
+  font-size: 16px;
+}
+
+/*Homepage*/
+.home-container{
+  position:relative;
+  text-align: center;
+  color: #f4f4f4;
+}
+/*HeroText*/
+.main-text{
+  position: absolute;
+  top:10%;
+  left:5%;
+  text-align: center;
+  width:50%;
+  background-color: transparent;
+  margin: 10% 20%;
+  
+}
+.main-text img {
+  background-color: transparent;
+  height:250px;
+  width: 400px;
+}
+.main-text h1{
+  
+  font-size:50px;
+  background-color: transparent;
+
+  
+}
+
+.main-text button{
+  color:#f4f4f4;
+  font-size:30px;
+  border-radius:15px;
+  padding: 10px;
+  margin:25px;
+  background-color: #22211e;
+  border-color: #ff8000;
+  cursor:pointer;
+}
+/*Home Slider*/
+.img-slider {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow:hidden;
+}
+ .slider-container {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  animation: slider 15s infinite;
+}
+.img-slider .slider-container .slide {
+  position: relative;
+  width: 33.33333333%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+}
+.img-slider .slider-container {
+position:absolute;
+display: block;
+width: 150%;
+height: 50vh;
+overflow:hidden;
+border-radius: 15px;
+background-color:#22211e;
+
+}
+
+.slide img {
+  width:100%;
+  height: 60vh;
+  padding:5px;
+  border-radius: 15px;
+
+}
+
+@keyframes slider {
+  0%, 25%, 100%{left: 0}
+  
+  30%, 55%{left: -40%}
+  
+  60%, 85%{left: -52%}
+ 
+}
+
+
+/*Feautured*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:black;
+}
+
+#third{
+    color: #ffffff;
+    padding: 10px;
+}
+
+#toggle {
+    color:white;
+}
+.hero-container {
+    height: 620px;
+    width: 100%;
+}
+/* .hero-image{
+​
+       position: static;
+       min-height: 80vh;
+       width: 100%;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       position: static;
+       background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.06)),
+       url("images/background3.jpg"); 
+​
+}*/
+.Search-Text{
+    color:white;
+    text-align: center;
+}
+.Search-bar button{
+  color:black;
+  justify-content: center;
+  background-color: white; 
+ 
+}
+​
+.Feature-title{
+    color:white;
+    text-align: center;
+}
+​
+.container {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+}
+​
+.card {
+    background: #ff8000;
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+}
+.card-image {
+    height: 200px;
+    margin-bottom: 5px;
+    background-size: cover;
+    background-position: center;
+}
+​
+.food-1{
+    background-image: url('https://media.istockphoto.com/photos/raw-tuna-steak-and-seafood-on-wooden-tray-picture-id1156011999?k=20&m=1156011999&s=612x612&w=0&h=yaTBdGOP4RIErLfj9HiGspH8Pq36cl1uixcNXsi2gc4=');
+}
+​
+.food-2 {
+    background-image: url('https://media.istockphoto.com/photos/raw-tuna-steak-and-seafood-on-wooden-tray-picture-id1156011999?k=20&m=1156011999&s=612x612&w=0&h=yaTBdGOP4RIErLfj9HiGspH8Pq36cl1uixcNXsi2gc4=');
+}
+.food-3 {
+    background-image: url('https://media.istockphoto.com/photos/raw-tuna-steak-and-seafood-on-wooden-tray-picture-id1156011999?k=20&m=1156011999&s=612x612&w=0&h=yaTBdGOP4RIErLfj9HiGspH8Pq36cl1uixcNXsi2gc4=');
+}
+.food-4 {
+    background-image: url('https://media.istockphoto.com/photos/raw-tuna-steak-and-seafood-on-wooden-tray-picture-id1156011999?k=20&m=1156011999&s=612x612&w=0&h=yaTBdGOP4RIErLfj9HiGspH8Pq36cl1uixcNXsi2gc4=');
+}
+.food-5 {
+    background-image: url('https://media.istockphoto.com/photos/raw-tuna-steak-and-seafood-on-wooden-tray-picture-id1156011999?k=20&m=1156011999&s=612x612&w=0&h=yaTBdGOP4RIErLfj9HiGspH8Pq36cl1uixcNXsi2gc4=');
+}
+.food-5 {
+    background-image: url('https://media.istockphoto.com/photos/raw-tuna-steak-and-seafood-on-wooden-tray-picture-id1156011999?k=20&m=1156011999&s=612x612&w=0&h=yaTBdGOP4RIErLfj9HiGspH8Pq36cl1uixcNXsi2gc4=');
+}
+.food-6 {
+    background-image: url('https://media.istockphoto.com/photos/raw-tuna-steak-and-seafood-on-wooden-tray-picture-id1156011999?k=20&m=1156011999&s=612x612&w=0&h=yaTBdGOP4RIErLfj9HiGspH8Pq36cl1uixcNXsi2gc4=');
+}
+​
+.card h2 {
+    margin-bottom: -5px;
+    padding: 1px;
+    /* text-align: center; */
+    color: white;
+}
+​
+.card h3 {
+    font-size: 15px;
+    margin-bottom: -15px;
+    padding: 5px;
+    /* text-align: center; */
+    color: white;
+}
+​
+ .card:hover {
+     transform: scale(1.03);
+     transition: all 1s ease;
+     cursor: pointer;
+ }
