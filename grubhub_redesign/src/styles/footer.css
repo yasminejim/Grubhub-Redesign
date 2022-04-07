@@ -9,7 +9,7 @@ footer {
 .footer-container {
     max-width: 100%;
     margin: auto;
-    padding: 0 20px;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,6 +35,7 @@ footer {
 .right-col p {
     color: white;
     font-size: 17px;
+
 }
 
 .copyrights {
@@ -62,4 +63,5 @@ footer {
     margin-top: 15px;
     margin-left: 50px;
     font-size: 16px;
+   
 }

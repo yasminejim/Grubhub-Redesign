@@ -19,6 +19,7 @@
 .hero-container {
     height: 620vh;
     width: 100%;
+    position: absolute;
 }
 
 /* .hero-image{

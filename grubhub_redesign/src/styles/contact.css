@@ -9,7 +9,7 @@
 /* background image */
 .wrapper {
   background-image: url('./Images/backgroundimage.jpg');
-  height: 150vh;
+  height: 130vh;
   position: relative;
 
   /* background-position: center;
@@ -106,7 +106,7 @@ input[type=submit]:hover {
 .contact {
   background-color: #ff8000;
   opacity: 0.8;
-  top: 25%;
+  top: 20%;
   padding: 20px;
   width: 50%;
   margin: auto;
