@@ -7,7 +7,7 @@ import FeaturedRest from "./pages/FeaturedRest";
 import "./styles/App.css";
 import "./styles/contact.css";
 import "./styles/footer.css";
-import "./styles/resturants.css";
+import "./styles/restaurants.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -19,7 +19,7 @@ function App() {
         {}
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
-          <Route exact path="/resturants" element={<FeaturedRest />}></Route>
+          <Route exact path="/restaurants" element={<FeaturedRest />}></Route>
           {/* <Route exact path="/signup" element={<SignUp />}></Route> */}
           <Route exact path="/contact" element={<Contact />}></Route>
         </Routes>

@@ -2,7 +2,6 @@ import React from "react";
 import HomeSlider from "../components/HomeSlider";
 import IconSlider from "../components/IconSlider";
 
-
 const Home = () => {
   return (
     <>
@@ -14,25 +13,28 @@ const Home = () => {
 
           <button>Order Now</button>
         </div>
-        <IconSlider/>
+        <IconSlider />
+
         <div className="mid-page-container">
-            <div className="mid-page-text">
-          <h1>What are you Craving?</h1>
-          <h2>
-            Visit our featured restaurants page to find a delicious meal that
-            fits your fancy.
-          </h2>
-          <button className="mid-button" href="/resturants">Go To Featured Resturants Page</button>
+          <div className="mid-page-text">
+            <h1>What are you Craving?</h1>
+            <h2>
+              Visit our featured restaurants page to find a delicious meal that
+              fits your fancy.
+            </h2>
+            <button className="mid-button" href="/resturants">
+              Go To Featured Resturants Page
+            </button>
           </div>
           <div className="mid-page-image">
-          <img
-            src="./Images/diversefoodinlaptop.jpg"
-            height="300"
-            width="500"
-          />
+            <img
+              src="./Images/diversefoodinlaptop.jpg"
+              height="300"
+              width="500"
+            />
           </div>
         </div>
-        
+
         <HomeSlider />
       </main>
     </>
