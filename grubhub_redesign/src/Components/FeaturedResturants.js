@@ -1,36 +1,44 @@
-import React from 'react';
-import "./App.css";
+import React from 'react'
+import restuarntsJson from '../test.json'
 
+class FeatureResturant extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            searchCategory: '',
+            allResturants: [],
+            filteredResturants: [],
+        };
+    }
 
-const Featured = () =>{
-    return(
-<>
-<div className="Search-Text">
-    <h1>You want it. We get it.</h1>
-</div>
+    componentDidMount() {
+        //fetch method 
+        this.setState({
+            allResturants: restuarntsJson,
+            filteredResturants: restuarntsJson,
+        })
+    }
+    
+    filterByCategory = (event) => {
+        const currentCategory = this.state.searchCategory
+        if (currentCategory == "") {
+            return
+        }
 
-<div className="Search-bar">
-</div>
+        const copyResturants = [...this.state.allResturants]
+        const filteredResults = copyResturants.filter((restuarnt) => restuarnt.cuisine == currentCategory)
 
-<main>
+        this.setState({
+            filteredResults
+        })
 
-<div className="Feature-title">
-    <h2>FEATURED RESTURANTS NEAR YOU</h2>
-</div>
+    }
 
-<div className="card">
-    <div className={'card-image food-' + index}></div>
-    <h3>{title}</h3>
-    <h4>{miles}</h4>
-</div>
-
-
-</main>
-
-
-
-
-</>
-    )
+    render() {
+        return ( <div>
+            </div> 
+        );
+    }
 }
-export default Featured;
+
+export default FeatureResturant;
