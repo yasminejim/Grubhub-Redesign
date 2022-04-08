@@ -1,31 +1,31 @@
 import Navbar from "./components/Navbar";
-// import Footer from './components/Footer';
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
-// import Products from './pages/Products';
-// import Cart from './components/Cart';
-import "./App.css";
-import "./contact.css"
+import Footer from "./components/Footer";
+import FeaturedRest from "./pages/FeaturedRest";
+// import SignUp from "./pages/SignUp";
+import "./styles/App.css";
+import "./styles/contact.css";
+import "./styles/footer.css";
+import "./styles/resturants.css";
 
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  return ( 
-  <Router>
-    <Navbar / >
-    <> 
-    {} 
-    <Routes>
-    <Route exact path = "/" element ={<Home />}></Route> 
-    <Route exact path = "/contact" element = {<Contact />}></Route> {
-      /* <Route exact path =  "/products" element = {<Products/>}></Route>
-            //  
-             {/* <Route path = "/cart" element = {<Cart/>}></Route>  */
-    } 
-    </Routes> 
-    </> 
-    {/* <Footer/>  */}
-      </Router>
+  return (
+    <Router>
+      <Navbar />
+      <>
+        {}
+        <Routes>
+          <Route exact path="/" element={<Home />}></Route>
+          <Route exact path="/resturants" element={<FeaturedRest />}></Route>
+          {/* <Route exact path="/signup" element={<SignUp />}></Route> */}
+          <Route exact path="/contact" element={<Contact />}></Route>
+        </Routes>
+      </>
+      <Footer />
+    </Router>
   );
 }
 
