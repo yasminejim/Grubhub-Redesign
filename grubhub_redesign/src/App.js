@@ -3,7 +3,7 @@ import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
 import Footer from "./Components/Footer";
 import FeaturedRest from "./Pages/FeaturedRest";
-// import SignUp from "./pages/SignUp";
+import SignUp from "./Pages/Signup";
 import "./styles/App.css";
 import "./styles/contact.css";
 import "./styles/footer.css";
@@ -19,9 +19,9 @@ function App() {
         {}
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
-          <Route exact path="/resturants" element={<FeaturedRest />}></Route>
-          {/* <Route exact path="/signup" element={<SignUp />}></Route> */}
-          <Route exact path="/contact" element={<Contact />}></Route>
+          <Route exact path="/Resturants" element={<FeaturedRest />}></Route>
+          <Route exact path="/Signup" element={<SignUp />}></Route>
+          <Route exact path="/Contact" element={<Contact />}></Route>
         </Routes>
       </>
       <Footer />
