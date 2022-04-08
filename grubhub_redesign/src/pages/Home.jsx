@@ -32,6 +32,7 @@ const Home = () => {
           />
           </div>
         </div>
+        
         <HomeSlider />
       </main>
     </>
