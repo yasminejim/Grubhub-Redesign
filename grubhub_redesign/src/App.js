@@ -10,6 +10,7 @@ import "./styles/footer.css";
 import "./styles/resturants.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import OrderApp from "./Pages/OrderApp";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/Resturants" element={<FeaturedRest />}></Route>
+          <Route exact path="OrderApp" element={<OrderApp />}></Route>
           <Route exact path="/Signup" element={<SignUp />}></Route>
           <Route exact path="/Contact" element={<Contact />}></Route>
         </Routes>

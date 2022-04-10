@@ -14,7 +14,9 @@ const Home = () => {
         </div>
         <div>
           <h1>Icons slider:will have filter click connected to dtatase</h1>
-          <h1>Map API for quick search?</h1>
+          <h1>
+            <a href="grubhub_redesign/src/assests/api.html">MAPS</a>
+          </h1>
           <h1>add search bar to hero image above button</h1>
         </div>
         <HomeSlider />
