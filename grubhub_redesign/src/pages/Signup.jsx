@@ -1,6 +1,6 @@
 import React from "react";
 
-const Contact = () => {
+const SignUp = () => {
   const formValidation = () => {
     var firstName = document.forms["contactForm"]["first-name"];
     var lastName = document.forms["contactForm"]["last-name"];

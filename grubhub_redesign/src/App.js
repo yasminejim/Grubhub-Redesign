@@ -1,16 +1,16 @@
 import Navbar from "./Components/Navbar";
-import Home from "./Pages/Home";
-import Contact from "./Pages/Contact";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
 import Footer from "./Components/Footer";
-import FeaturedRest from "./Pages/FeaturedRest";
-import SignUp from "./Pages/Signup";
+import FeaturedRest from "./pages/FeaturedRest";
+import SignUp from "./pages/Signup";
 import "./styles/App.css";
 import "./styles/contact.css";
 import "./styles/footer.css";
 import "./styles/resturants.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import OrderApp from "./Pages/OrderApp";
+import OrderApp from "./pages/OrderApp";
 
 function App() {
   return (

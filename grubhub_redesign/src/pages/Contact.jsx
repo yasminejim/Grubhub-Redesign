@@ -57,7 +57,7 @@ const Contact = () => {
   };
   return (
     <div>
-      <div className="wrapper">
+      <div className="wrapper-contact">
         {/* Contact Page form */}
         <div className="contact">
           {/* <   Contact Information */}
