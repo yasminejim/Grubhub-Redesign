@@ -1,23 +1,26 @@
 import React from "react";
 
-const SignUp = () => {
+const Contact = () => {
   const formValidation = () => {
     var firstName = document.forms["contactForm"]["first-name"];
     var lastName = document.forms["contactForm"]["last-name"];
     var email = document.forms["contactForm"]["email"];
     var phone = document.forms["contactForm"]["phone"];
+    var message = document.forms["contactForm"]["message"];
 
     if (
       firstName.value === "" &&
       lastName.value === "" &&
       email.value === "" &&
-      phone.value === ""
+      phone.value === "" &&
+      message.value === ""
     ) {
       alert("Please fill out our contact form.");
       firstName.focus();
       lastName.focus();
       email.focus();
       phone.focus();
+      message.focus();
       return false;
     }
 
@@ -44,6 +47,12 @@ const SignUp = () => {
       phone.focus();
       return false;
     }
+
+    if (message.value === "") {
+      window.alert("Enter your comment");
+      message.focus();
+      return false;
+    }
     return true;
   };
   return (
@@ -53,9 +62,8 @@ const SignUp = () => {
         <div className="contact">
           {/* <   Contact Information */}
           <section className="hero clear">
-            <h1>Sign Up!</h1>
-            <h2>Contact email: care@humandesign.com</h2>
-            <h2>5538 Daniels St. Chino, CA 91710</h2>
+            <h1>SIGN UP</h1>
+            <h2>Enter your details below</h2>
           </section>
           <form
             name="contactForm"
@@ -63,7 +71,7 @@ const SignUp = () => {
             onSubmit="return formValidation()"
           >
             <label>
-              FIRST NAME
+              {/* FIRST NAME */}
               <input
                 name="first-name"
                 type="text"
@@ -75,7 +83,7 @@ const SignUp = () => {
             </label>
 
             <label>
-              LAST NAME
+              {/* LAST NAME */}
               <input
                 name="last-name"
                 type="text"
@@ -87,7 +95,7 @@ const SignUp = () => {
             </label>
 
             <label>
-              EMAIL
+              {/* EMAIL */}
               <input
                 name="email"
                 type="email"
@@ -98,20 +106,21 @@ const SignUp = () => {
             </label>
 
             <label>
-              PHONE
+              {/* PHONE */}
               <input
                 name="phone"
                 type="tel"
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 className="phone"
-                placeholder="000-000-000"
+                placeholder="Password"
                 required
               />
             </label>
+
             <input
               type="submit"
               className="form-control submit"
-              value="Submit"
+              value="SUBMIT"
             />
           </form>
         </div>
